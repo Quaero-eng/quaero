@@ -52,7 +52,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://quaero-eng.github.io/"
+            --baseURL "https://quaero-engtest.github.io/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -61,7 +61,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://quaero-eng.github.io/"
+      url: "https://quaero-engtest.github.io/"
     runs-on: ubuntu-latest
     needs: build
     steps:
